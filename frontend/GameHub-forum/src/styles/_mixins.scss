@@ -1,0 +1,6 @@
+// 弹性居中：将子元素在水平和垂直方向同时居中
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

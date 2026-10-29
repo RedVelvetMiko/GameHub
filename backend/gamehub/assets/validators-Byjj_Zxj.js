@@ -1,0 +1,1 @@
+import{t as e}from"./request-uLa7OiG9.js";function t(t){return e.post(`/login`,t)}function n(t){return e.post(`/register`,t)}var r=/^[\u4e00-\u9fa5A-Za-z0-9_-]{2,16}$/,i=`用户名需为 2-16 位中文、字母、数字或下划线`,a=/^\S{6,30}$/,o=`密码需为 6-30 位，且不能包含首尾空格`;export{t as a,r as i,a as n,n as o,i as r,o as t};

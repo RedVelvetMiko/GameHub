@@ -1,0 +1,264 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123456",
+      "avatar": "",
+      "signature": "管理员",
+      "role": "admin",
+      "status": 1,
+      "created_at": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "username": "testuser",
+      "password": "123456",
+      "avatar": "",
+      "signature": "普通用户",
+      "role": "user",
+      "status": 1,
+      "created_at": "2026-02-15T12:30:00.000Z"
+    },
+    {
+      "username": "newuser",
+      "password": "123456",
+      "avatar": "",
+      "signature": "",
+      "role": "user",
+      "status": 1,
+      "created_at": "2026-10-14T04:00:41.047Z",
+      "id": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "艾尔登法环",
+      "icon": "elden-ring-icon.png",
+      "description": "讨论交界地的冒险与秘密",
+      "sort": 1
+    },
+    {
+      "id": 2,
+      "name": "赛博朋克2077",
+      "icon": "cyberpunk-icon.png",
+      "description": "夜之城的传奇故事",
+      "sort": 2
+    },
+    {
+      "id": 3,
+      "name": "黑神话：悟空",
+      "icon": "wukong-icon.png",
+      "description": "直面天命，探寻西游真相",
+      "sort": 3
+    },
+    {
+      "id": 4,
+      "name": "荒野大镖客2",
+      "icon": "rdr2-icon.png",
+      "description": "西部世界的恩怨情仇",
+      "sort": 4
+    },
+    {
+      "id": 5,
+      "name": "综合讨论",
+      "icon": "general-icon.png",
+      "description": "其他游戏或杂谈",
+      "sort": 99
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "category_id": 1,
+      "title": "【攻略】艾尔登法环全BOSS逃课打法汇总",
+      "content": "这里是一篇详细的逃课攻略……（省略正文）",
+      "cover": "",
+      "views": 1234,
+      "likes_count": 56,
+      "is_top": 1,
+      "status": 1,
+      "created_at": "2026-03-10T08:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "category_id": 2,
+      "title": "赛博朋克2077 2.0版本最强黑客Build",
+      "content": "分享一下我的黑客流派加点……",
+      "cover": "",
+      "views": 876,
+      "likes_count": 34,
+      "is_top": 0,
+      "status": 1,
+      "created_at": "2026-04-05T14:22:00.000Z"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "category_id": 3,
+      "title": "黑神话悟空 第一回通关感受",
+      "content": "刚打完黑风山，说说感想……",
+      "cover": "",
+      "views": 2100,
+      "likes_count": 89,
+      "is_top": 0,
+      "status": 1,
+      "created_at": "2026-05-20T09:15:00.000Z"
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "category_id": 4,
+      "title": "荒野大镖客2 线上模式新手入门指南",
+      "content": "刚入坑线上的朋友看过来……",
+      "cover": "",
+      "views": 654,
+      "likes_count": 23,
+      "is_top": 0,
+      "status": 1,
+      "created_at": "2026-06-01T16:44:00.000Z"
+    },
+    {
+      "id": 5,
+      "user_id": 2,
+      "category_id": 5,
+      "title": "大家最近在玩什么游戏？",
+      "content": "最近游戏荒，求推荐……",
+      "cover": "",
+      "views": 432,
+      "likes_count": 67,
+      "is_top": 0,
+      "status": 1,
+      "created_at": "2026-07-13T20:30:00.000Z"
+    },
+    {
+      "user_id": 3,
+      "category_id": 1,
+      "title": "新人第一次玩魂",
+      "content": "有没有什么建议",
+      "cover": "",
+      "views": 0,
+      "likes_count": 0,
+      "is_top": 0,
+      "status": 1,
+      "created_at": "2026-10-14T05:17:09.604Z",
+      "id": 6
+    },
+    {
+      "user_id": 1,
+      "category_id": 2,
+      "title": "有没有第三人称mod",
+      "content": "玩第一人称的游戏会晕3d，救命",
+      "cover": "",
+      "views": 0,
+      "likes_count": 0,
+      "is_top": 0,
+      "status": 1,
+      "created_at": "2026-10-14T06:46:22.559Z",
+      "id": 7
+    },
+    {
+      "user_id": 1,
+      "category_id": 5,
+      "title": "极品飞车21cpu补丁",
+      "content": "链接*******",
+      "cover": "",
+      "views": 0,
+      "likes_count": 0,
+      "is_top": 0,
+      "status": 1,
+      "created_at": "2026-10-14T06:53:38.417Z",
+      "id": 8
+    }
+  ],
+  "replies": [
+    {
+      "id": 1,
+      "post_id": 1,
+      "user_id": 2,
+      "parent_id": null,
+      "content": "感谢分享，收藏了！",
+      "created_at": "2026-03-10T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "post_id": 1,
+      "user_id": 1,
+      "parent_id": 1,
+      "content": "不客气，有用就好 :)",
+      "created_at": "2026-03-10T11:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "post_id": 2,
+      "user_id": 1,
+      "parent_id": null,
+      "content": "这个build确实强，我也在用",
+      "created_at": "2026-04-05T15:00:00.000Z"
+    },
+    {
+      "post_id": 1,
+      "user_id": 3,
+      "parent_id": null,
+      "content": "这么强？！",
+      "created_at": "2026-10-14T05:20:12.308Z",
+      "id": 4
+    },
+    {
+      "post_id": 1,
+      "user_id": 1,
+      "parent_id": 4,
+      "content": "你都说完了我说什么",
+      "created_at": "2026-10-14T06:15:52.451Z",
+      "id": 5
+    },
+    {
+      "post_id": 1,
+      "user_id": 1,
+      "parent_id": 0,
+      "content": "字数补丁",
+      "created_at": "2026-10-14T06:16:05.970Z",
+      "id": 6
+    },
+    {
+      "post_id": 1,
+      "user_id": 1,
+      "parent_id": 0,
+      "content": "qqqqq",
+      "created_at": "2026-10-14T06:16:12.293Z",
+      "id": 7
+    },
+    {
+      "post_id": 1,
+      "user_id": 1,
+      "parent_id": 0,
+      "content": "wwwwwww",
+      "created_at": "2026-10-14T06:16:18.811Z",
+      "id": 8
+    },
+    {
+      "post_id": 1,
+      "user_id": 1,
+      "parent_id": 0,
+      "content": "测试",
+      "created_at": "2026-10-14T06:33:20.041Z",
+      "id": 9
+    }
+  ],
+  "likes": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "post_id": 1,
+      "created_at": "2026-03-11T00:00:00.000Z"
+    },
+    {
+      "user_id": 1,
+      "post_id": 1,
+      "id": 2
+    }
+  ]
+}

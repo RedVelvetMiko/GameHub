@@ -1,0 +1,25 @@
+// ========== 主题颜色 ==========
+$primary-color: #2d8cf0;      // 主色（蓝），用于按钮、链接、选中态等
+$secondary-color: #19be6b;    // 辅助色（绿），用于成功、正向提示
+$danger-color: #ed4014;       // 危险色（红），用于删除、错误提示
+$warning-color: #ff9900;      // 警告色（橙），用于警示、需注意的操作
+$text-color: #333;            // 正文文字色
+$text-secondary: #999;        // 次要文字色（说明、时间等）
+$bg-color: #f5f7fa;           // 页面背景色
+$border-color: #dcdee2;       // 边框、分割线颜色
+
+// ========== 间距 ==========
+$spacing-xs: 4px;             // 超小间距
+$spacing-sm: 8px;             // 小间距
+$spacing-md: 16px;            // 标准间距
+$spacing-lg: 24px;            // 大间距
+$spacing-xl: 32px;            // 超大间距（区块之间）
+
+// ========== 字体大小 ==========
+$font-size-xs: 12px;          // 最小号（辅助说明）
+$font-size-sm: 13px;          // 小号（次要信息）
+$font-size-base: 14px;        // 基准字号（正文）
+$font-size-lg: 16px;          // 大号（小标题）
+$font-size-xl: 20px;          // 特大号（标题）
+$font-size-xxl: 26px;         // 页面主标题
+$font-size-xxxl: 36px;        // 展示型大标题

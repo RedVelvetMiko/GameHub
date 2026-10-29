@@ -1,0 +1,1 @@
+import{t as e}from"./request-uLa7OiG9.js";function t(t={}){let n={};return t.page&&(n.page=t.page),t.limit&&(n.limit=t.limit),t.category_id&&(n.category_id=t.category_id),t.keyword&&(n.keyword=t.keyword),n.sort=t.sort||`latest`,e.get(`/posts`,{params:n})}function n(t){return e.post(`/posts`,t)}export{t as n,n as t};

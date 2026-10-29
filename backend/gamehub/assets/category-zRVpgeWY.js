@@ -1,0 +1,1 @@
+import{t as e}from"./request-uLa7OiG9.js";function t(){return e.get(`/categories`)}export{t};
