@@ -44,18 +44,27 @@ request.interceptors.response.use(
 		return res
 	},
 	error => {
-		// ✅ 修改点：HTTP 401 不一定代表登录过期，还要看响应体的 code
-		if (error.response && error.response.status === 401) {
-			const data = error.response.data
-			// 只有业务 code 也是 401 时才认为是登录过期
+		const response = error.response
+		const data = response?.data
+
+		// HTTP 401：只有业务 code 也是 401 才认为登录过期
+		if (response && response.status === 401) {
 			if (data && data.code === 401) {
 				redirectToLogin()
 				return Promise.reject(new Error(data.msg || '请先登录'))
 			}
-			// 其他情况（如参数错误）只提示，不登出
+			// 其他 401（如参数错误），只提示不登出，也要带后端 msg
 			console.error(data?.msg || '请求失败')
-			return Promise.reject(error)
+			return Promise.reject(new Error(data?.msg || error.message || '请求失败'))
 		}
+
+		// 其他 HTTP 错误（400 / 405 / 409 / 500 ...）：优先用后端 msg
+		if (response) {
+			console.error(data?.msg || '请求失败')
+			return Promise.reject(new Error(data?.msg || error.message || '请求失败'))
+		}
+
+		// 网络层错误（无 response）：保留 axios 原始文案
 		console.error('网络错误:', error.message)
 		return Promise.reject(error)
 	}
